@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/rineliniguezsosa/Mern-nodejs-and-React/issues"
   },
-  "homepage": "https://github.com/rineliniguezsosa/Mern-nodejs-and-React#readme"
+  "homepage": "https://github.com/rineliniguezsosa/Mern-nodejs-and-React#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }
