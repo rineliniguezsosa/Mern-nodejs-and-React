@@ -1,0 +1,2 @@
+# ignorando el archivo de las variables de entorno
+.env
