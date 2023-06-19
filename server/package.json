@@ -4,6 +4,7 @@
   "description": "mern stack nodejs typescript",
   "main": "server.js",
   "scripts": {
+    "dev":"ts-node-dev server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
