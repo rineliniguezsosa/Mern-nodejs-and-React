@@ -6,4 +6,4 @@ router.get('/auth/login',(req,res)=>{
     return res.json('Hola mundo')
 })
 
-router.get('auth/registrarse',registrarse)
+router.get('/auth/registrarse',registrarse)
