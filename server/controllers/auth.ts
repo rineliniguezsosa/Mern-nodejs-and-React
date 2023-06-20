@@ -1,5 +1,5 @@
 import {request,response} from 'express'
-
+import nodemailer from 'nodemailer'
 //Metodo envia un email al usuario
 export const registrarse = async() => {
 
