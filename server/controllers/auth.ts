@@ -1,3 +1,4 @@
+import {request,response} from 'express'
 
 //Metodo envia un email al usuario
 export const registrarse = async() => {
