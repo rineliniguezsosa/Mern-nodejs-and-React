@@ -5,6 +5,7 @@ import jwt from 'jsonwebtoken'
 //Metodo envia un email al usuario
 export const registrarse = async(req = request,res = response) => {
     const {nombre,email,password} = req.body //datos del usuario
+    console.log(nombre,email,password)
 }
 
 //Metodo para verificar que un usuario exista en la DB
