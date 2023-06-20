@@ -3,3 +3,8 @@
 export const registrarse = async() => {
 
 }
+
+//Metodo para verificar que un usuario exista en la DB
+export const login = async()=>{
+
+}
