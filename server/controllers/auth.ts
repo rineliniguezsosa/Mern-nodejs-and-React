@@ -23,7 +23,7 @@ export const registrarse = async(req = request,res = response) => {
         to: `${email}`, // list of receivers
         subject:`Activate your count ${nombre}`, 
         html: `
-        <strong>please follow this link for sigin now</strong>
+        <strong>please follow this link for sign in now</strong>
         <a href="${process.env.CLIENT}/auth/${token}">follow this link</a>
         <p>This message can use sentitive information </p>
         <p>${process.env.CLIENT}</p>
