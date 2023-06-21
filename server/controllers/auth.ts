@@ -8,6 +8,16 @@ export const registrarse = async(req = request,res = response) => {
     console.log(nombre,email,password)
 
     const token = jwt.sign({nombre,email,password},`${process.env.JWTACTIVATEACCOUNT}`,{expiresIn:'5m'})
+
+    const transporter = nodemailer.createTransport({
+    host: 'smtp.ethereal.email',
+    port: 587,
+    auth: {
+        user: `${process.env.USER}`,
+        pass: `${process.env.PASS}`,
+        }
+    });
+
 }
 
 //Metodo para verificar que un usuario exista en la DB
