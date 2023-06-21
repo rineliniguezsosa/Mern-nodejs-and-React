@@ -18,6 +18,17 @@ export const registrarse = async(req = request,res = response) => {
         }
     });
 
+    const msg = ({
+        from: `<norepy@mernauth.com>`, // sender address
+        to: `${email}`, // list of receivers
+        subject:`Activate your count ${nombre}`, 
+        html: `
+        <strong>please follow this link for sigin now</strong>
+        <a href="${process.env.CLIENT}/auth/${token}">follow this link</a>
+        <p>This message can use sentitive information </p>
+        <p>${process.env.CLIENT}</p>
+        `, 
+    })
 }
 
 //Metodo para verificar que un usuario exista en la DB
