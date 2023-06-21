@@ -6,6 +6,8 @@ import jwt from 'jsonwebtoken'
 export const registrarse = async(req = request,res = response) => {
     const {nombre,email,password} = req.body //datos del usuario
     console.log(nombre,email,password)
+
+    const token = jwt.sign({nombre,email,password},`${process.env.JWTACTIVATEACCOUNT}`,{expiresIn:'5m'})
 }
 
 //Metodo para verificar que un usuario exista en la DB
