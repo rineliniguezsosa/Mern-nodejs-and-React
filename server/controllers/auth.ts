@@ -29,6 +29,18 @@ export const registrarse = async(req = request,res = response) => {
         <p>${process.env.CLIENT}</p>
         `, 
     })
+
+    try{
+        await transporter.sendMail(msg)
+
+        res.json({
+            mensaje:`El ${email} ha sido enviado`
+        })
+    }catch(error){
+        res.json({
+            mensaje:`Algo salio mal al enviar el email`
+        })
+    }
 }
 
 //Metodo para verificar que un usuario exista en la DB
