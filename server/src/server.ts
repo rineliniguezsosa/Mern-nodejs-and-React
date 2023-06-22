@@ -1,6 +1,5 @@
 import express from 'express'
 import { router } from '../routes'
-import mongoose from 'mongoose'
 import 'dotenv/config'
 const app = express()
 
