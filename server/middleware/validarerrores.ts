@@ -1,4 +1,5 @@
 import { validationResult } from 'express-validator'
+import { Request,Response,NextFunction} from 'express'
 
 export const validarerrores = async(req,resp,next)=>{
     const error = validationResult(req)
