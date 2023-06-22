@@ -6,6 +6,6 @@ export const mongoconnection = async() =>{
 
         console.log("Conexión exitosa a la base de datos.")
     } catch (error) {
-        
+        console.error('Error de conexión a la base de datos:',error);
     }
 }
