@@ -1,6 +1,6 @@
 import {request,response} from 'express'
 import nodemailer from 'nodemailer'
-import jwt,{ VerifyErrors} from 'jsonwebtoken'
+import jwt,{ VerifyErrors,JwtPayload } from 'jsonwebtoken'
 import { usuario } from '../models' 
 
 //Metodo envia un email al usuario
