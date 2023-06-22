@@ -50,4 +50,8 @@ export const login = async()=>{
 
 export const activatucuenta = async(req = request,resp = response)=>{
     const {token} = req.body
+
+    if(token){
+        
+    }
 }
