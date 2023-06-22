@@ -6,3 +6,5 @@ export const router = Router()
 router.get('/auth/login',login)
 
 router.post('/auth/registrarse',uservalidationregister,registrarse)
+
+router.post("/auth/activa-tu-cuenta")
