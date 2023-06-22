@@ -47,3 +47,7 @@ export const registrarse = async(req = request,res = response) => {
 export const login = async()=>{
 
 }
+
+export const activatucuenta = async()=>{
+    
+}
