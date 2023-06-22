@@ -1,7 +1,7 @@
 import { validationResult } from 'express-validator'
 import { Request,Response,NextFunction} from 'express'
 
-export const validarerrores = async(req,resp,next)=>{
+export const validarerrores = async(req:Request,resp:Response,next:NextFunction)=>{
     const error = validationResult(req)
 
     if(!error.isEmpty()){
