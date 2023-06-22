@@ -6,4 +6,6 @@ export const validarerrores = async(req,resp,next)=>{
     if(!error.isEmpty()){
         return resp.status(400).json(error)
     }
+
+    next()
 }
