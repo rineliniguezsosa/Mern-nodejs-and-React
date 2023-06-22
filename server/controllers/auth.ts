@@ -52,6 +52,12 @@ export const activatucuenta = async(req = request,resp = response)=>{
     const {token} = req.body
 
     if(token){
-        
+        jwt.verify(token,`${process.env.JWTACTIVATEACCOUNT}`,(error:VerifyErrors | null)=>{
+            if(error){
+                return resp.status(400).json({
+                    msg:'El link expiro autenticate de nuevo'
+                })
+            }
+        })
     }
 }
