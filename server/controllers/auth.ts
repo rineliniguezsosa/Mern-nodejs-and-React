@@ -60,4 +60,6 @@ export const activatucuenta = async(req = request,resp = response)=>{
             }
         })
     }
+
+    const { nombre,email,password } = jwt.decode(token) //decode payload
 }
