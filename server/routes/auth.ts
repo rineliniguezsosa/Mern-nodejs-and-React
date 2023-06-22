@@ -5,4 +5,4 @@ export const router = Router()
 
 router.get('/auth/login',login)
 
-router.get('/auth/registrarse',uservalidationregister,registrarse)
+router.post('/auth/registrarse',uservalidationregister,registrarse)
