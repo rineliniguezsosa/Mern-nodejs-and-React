@@ -48,6 +48,6 @@ export const login = async()=>{
 
 }
 
-export const activatucuenta = async()=>{
-    
+export const activatucuenta = async(req = request,resp = response)=>{
+
 }
