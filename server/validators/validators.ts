@@ -1,4 +1,5 @@
 import { check } from 'express-validator'
+import { validarerrores } from '../middleware'
 
 export const uservalidationregister = [
     check('nombre').notEmpty().withMessage('Requerido'),
