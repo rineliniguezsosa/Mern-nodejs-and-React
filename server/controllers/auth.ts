@@ -1,6 +1,7 @@
 import {request,response} from 'express'
 import nodemailer from 'nodemailer'
 import jwt,{ VerifyErrors} from 'jsonwebtoken'
+import { usuario } from '../models' 
 
 //Metodo envia un email al usuario
 export const registrarse = async(req = request,res = response) => {
