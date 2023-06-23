@@ -69,4 +69,10 @@ export const activatucuenta = async(req = request,resp = response)=>{
 
     const salt = bcrypt.genSaltSync(parseInt(`${process.env.SECRET}`))
     nuevousuario.password = bcrypt.hashSync(password,salt);
+
+    try {
+        
+    } catch (error) {
+        
+    }
 }
