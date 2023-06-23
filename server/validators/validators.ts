@@ -9,3 +9,7 @@ export const uservalidationregister = [
     check('password').isLength({min:6}).withMessage("Debe contener al menos 6 caracteres"),
     validarerrores
 ]
+
+export const userloginvalidator = [
+
+]
