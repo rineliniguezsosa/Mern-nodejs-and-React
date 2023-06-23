@@ -1,7 +1,7 @@
 import { Schema,model,Document } from 'mongoose'
 import { Usuario } from '../Types'
 
-const user = new Schema({
+const user:Schema<Usuario> = new Schema<Usuario>({
     nombre:{
         type:String,
     }, 
