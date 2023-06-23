@@ -72,6 +72,10 @@ export const activatucuenta = async(req = request,resp = response)=>{
 
     try {
         await nuevousuario.save()
+
+        return resp.status(200).json({
+            msg:`¡Bienvenido ${nombre}! Inicia sesión para continuar`
+        })
     } catch (error) {
         
     }
