@@ -1,4 +1,5 @@
 import { Schema,model,Document } from 'mongoose'
+import { Usuario } from '../Types'
 
 const user = new Schema({
     nombre:{
