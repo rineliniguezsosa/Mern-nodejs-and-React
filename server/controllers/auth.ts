@@ -71,7 +71,7 @@ export const activatucuenta = async(req = request,resp = response)=>{
     nuevousuario.password = bcrypt.hashSync(password,salt);
 
     try {
-        
+        await nuevousuario.save()
     } catch (error) {
         
     }
