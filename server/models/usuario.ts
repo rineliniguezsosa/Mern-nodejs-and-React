@@ -20,7 +20,7 @@ const user = new Schema({
         default:'subscriptor'
     },
     resetpasswordlink:{
-        data:String,
+        type:String,
         default:''
     }
 },{ timestamps:true })
