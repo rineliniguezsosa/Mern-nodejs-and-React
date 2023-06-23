@@ -1,6 +1,6 @@
 import { Router } from 'express'
 import { registrarse,login,activatucuenta } from '../controllers'
-import { uservalidationregister } from '../validators' 
+import { uservalidationregister,userloginvalidator } from '../validators' 
 export const router = Router()
 
 router.get('/auth/login',login)
