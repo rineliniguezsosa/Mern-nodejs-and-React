@@ -77,6 +77,8 @@ export const activatucuenta = async(req = request,resp = response)=>{
             msg:`¡Bienvenido ${nombre}! Inicia sesión para continuar`
         })
     } catch (error) {
-        
+        return resp.status(400).json({
+            msg:'Algo sucedio :( intente de nuevo'
+        })
     }
 }
