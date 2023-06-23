@@ -66,4 +66,7 @@ export const activatucuenta = async(req = request,resp = response)=>{
     const { nombre,email,password } = jwt.decode(token) as JwtPayload //decode payload
 
     const nuevousuario = new usuario({nombre,email,password}) //instancia usuario
+
+    const salt = bcrypt.genSaltSync(parseInt(`${process.env.SECRET}`))
+    
 }
