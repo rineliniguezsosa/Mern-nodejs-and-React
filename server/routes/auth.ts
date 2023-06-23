@@ -7,4 +7,4 @@ router.get('/auth/login',login)
 
 router.post('/auth/registrarse',uservalidationregister,registrarse)
 
-router.post("/auth/activa-tu-cuenta")
+router.post("/auth/activa-tu-cuenta",activatucuenta)
