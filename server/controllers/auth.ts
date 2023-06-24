@@ -68,6 +68,7 @@ export const login = async(req = request,resp = response)=>{
                 msg:'El password no coincide'
         })}else{
             const token = jwt.sign({_id:user._id},`${process.env.JWTACTIVATEACCOUNT}`,{expiresIn:'7d'})
+            const {_id,nombre,email,role} = user
         }
     } catch (error) {
         
