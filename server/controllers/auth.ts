@@ -50,7 +50,7 @@ export const login = async(req = request,resp = response)=>{
     const {email,password} = req.body
 
     try {
-        
+        const user = await usuario.findOne({email}) 
     } catch (error) {
         
     }
