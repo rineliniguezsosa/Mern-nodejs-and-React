@@ -76,7 +76,7 @@ export const login = async(req = request,resp = response)=>{
             })
         }
     } catch (error) {
-        
+        return resp.status(400).json({ error: 'Algo ha salido mal' });
     }
 }
 
