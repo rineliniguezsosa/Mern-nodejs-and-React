@@ -60,6 +60,8 @@ export const login = async(req = request,resp = response)=>{
 
         const contraseña:string = password
         const dbpassword:any = user.password
+
+        const passwordmatch:boolean = bcrypt.compareSync(contraseña,dbpassword)
     } catch (error) {
         
     }
