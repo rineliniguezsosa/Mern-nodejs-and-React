@@ -69,6 +69,11 @@ export const login = async(req = request,resp = response)=>{
         })}else{
             const token = jwt.sign({_id:user._id},`${process.env.JWTACTIVATEACCOUNT}`,{expiresIn:'7d'})
             const {_id,nombre,email,role} = user
+
+            return resp.status(200).json({
+                token,
+                "usuario":{_id,nombre,email,role}
+            })
         }
     } catch (error) {
         
