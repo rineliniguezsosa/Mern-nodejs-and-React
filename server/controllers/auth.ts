@@ -57,6 +57,8 @@ export const login = async(req = request,resp = response)=>{
                 msg:'Ups, parece que el correo electrónico no coincide'
             })
         }
+
+        const contraseña:string = password
     } catch (error) {
         
     }
