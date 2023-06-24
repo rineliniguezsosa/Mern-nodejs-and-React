@@ -66,7 +66,9 @@ export const login = async(req = request,resp = response)=>{
         if(!passwordmatch){
             return resp.status(400).json({
                 msg:'El password no coincide'
-        })
+        })}else{
+
+        }
     } catch (error) {
         
     }
