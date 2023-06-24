@@ -62,6 +62,11 @@ export const login = async(req = request,resp = response)=>{
         const dbpassword:any = user.password
 
         const passwordmatch:boolean = bcrypt.compareSync(contraseña,dbpassword)
+
+        if(!passwordmatch){
+            return resp.status(400).json({
+                msg:'El password no coincide'
+        })
     } catch (error) {
         
     }
