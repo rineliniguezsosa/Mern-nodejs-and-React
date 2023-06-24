@@ -48,6 +48,12 @@ export const registrarse = async(req = request,res = response) => {
 //Metodo para verificar que un usuario exista en la DB
 export const login = async(req = request,resp = response)=>{
     const {email,password} = req.body
+
+    try {
+        
+    } catch (error) {
+        
+    }
 }
 
 export const activatucuenta = async(req = request,resp = response)=>{
