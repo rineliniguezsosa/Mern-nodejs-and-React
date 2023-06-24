@@ -50,7 +50,13 @@ export const login = async(req = request,resp = response)=>{
     const {email,password} = req.body
 
     try {
-        const user = await usuario.findOne({email}) 
+        const user = await usuario.findOne({email})
+        
+        if(!user){
+            return resp.status(400).json({
+                msg:'Ups, parece que el correo electrónico no coincide'
+            })
+        }
     } catch (error) {
         
     }
