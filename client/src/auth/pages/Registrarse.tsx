@@ -6,7 +6,7 @@ export const Registrarse = () => {
     <AuthLayout titulo="Registrase">
       
       <form>
-        <Grid container>
+        <Grid container sx={{width:{sm:450}}}>
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
                 name="nombre" 
