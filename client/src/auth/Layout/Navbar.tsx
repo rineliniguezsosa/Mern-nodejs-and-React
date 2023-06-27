@@ -4,7 +4,9 @@ import { Link } from 'react-router-dom'
 export const Navbar = () => {
   return (
     <AppBar position='static'>
-
+        <Toolbar>
+          
+        </Toolbar>
     </AppBar>
   )
 }
