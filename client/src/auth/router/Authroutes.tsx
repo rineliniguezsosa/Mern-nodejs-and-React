@@ -4,7 +4,7 @@ import { Home } from '../pages/Home';
 export const Authroutes = () => {
   return (
     <Routes>
-
+        <Route path="/" element={<Home/>}/>
     </Routes>
   )
 }
