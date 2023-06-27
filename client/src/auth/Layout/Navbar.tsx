@@ -9,6 +9,8 @@ export const Navbar = () => {
 
             <Stack direction="row" spacing={2}>
                 <Link to="/"><Button sx={{color:'white'}}>Home</Button></Link>
+
+                <Link to="/auth/registrarse"><Button sx={{color:'white'}}>Registrarse</Button></Link>
             </Stack>
         </Toolbar>
     </AppBar>
