@@ -8,7 +8,7 @@ export const Navbar = () => {
             <Typography variant="h6" component="div">Rinel Iñi.</Typography>
 
             <Stack direction="row" spacing={2}>
-
+                <Link to="/"><Button sx={{color:'white'}}>Home</Button></Link>
             </Stack>
         </Toolbar>
     </AppBar>
