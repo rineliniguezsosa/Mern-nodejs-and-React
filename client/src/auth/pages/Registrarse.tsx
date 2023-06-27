@@ -1,4 +1,4 @@
-
+import { Grid } from '@mui/material'
 
 export const Registrarse = () => {
   return (
