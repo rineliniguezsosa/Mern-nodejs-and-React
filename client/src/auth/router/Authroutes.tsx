@@ -5,6 +5,7 @@ import { Navbar } from '../Layout/Navbar';
 export const Authroutes = () => {
   return (
     <>
+    <Navbar/>
     <Routes>
         <Route path="/" element={<Home/>}/>
     </Routes>
