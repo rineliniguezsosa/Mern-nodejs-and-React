@@ -6,6 +6,10 @@ export const Navbar = () => {
     <AppBar position='static'>
         <Toolbar>
             <Typography variant="h6" component="div">Rinel Iñi.</Typography>
+
+            <Stack direction="row" spacing={2}>
+
+            </Stack>
         </Toolbar>
     </AppBar>
   )
