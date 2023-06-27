@@ -2,7 +2,7 @@ import { Grid,Typography } from "@mui/material"
 import { AuthLayoutprops } from '../../types/Datatypes';
 
 
-export const AuthLayout = () => {
+export const AuthLayout = ({children,titulo}:AuthLayoutprops) => {
   return (
     <Grid container spacing={0} direction="column" alignItems='center' justifyContent='center' sx={{border:'1px red solid'}}>
       
