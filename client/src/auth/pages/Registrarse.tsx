@@ -8,7 +8,10 @@ export const Registrarse = () => {
       <form>
         <Grid container>
             <Grid item xs={12} sx={{mt:2,width:{sm:450}}}>
-                
+                <TextField
+                name="nombre" 
+                fullWidth
+                />
             </Grid>
         </Grid>
       </form>
