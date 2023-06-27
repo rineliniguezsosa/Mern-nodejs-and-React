@@ -1,4 +1,5 @@
 import { Grid,Typography } from "@mui/material"
+import { AuthLayoutprops } from '../../types/Datatypes';
 
 
 export const AuthLayout = () => {
