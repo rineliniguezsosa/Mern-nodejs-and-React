@@ -5,6 +5,8 @@ export const Approuter = () => {
   return (
     <Routes>
         <Route path="/auth/*" element={<Authroutes/>}/>
+
+        <Route path="/*" element={<Navigate to="/auth/"/>}/>
     </Routes>
   )
 }
