@@ -20,6 +20,13 @@ export const Registrarse = () => {
                 fullWidth
                 />
             </Grid>
+
+            <Grid item xs={12} sx={{mt:2}}>
+                <TextField
+                name="password" 
+                fullWidth
+                />
+            </Grid>
         </Grid>
       </form>
 
