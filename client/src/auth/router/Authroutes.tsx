@@ -9,6 +9,8 @@ export const Authroutes = () => {
     <Navbar/>
     <Routes>
         <Route path="/" element={<Home/>}/>
+
+        <Route path="/registrarse" element={<Registrarse/>}/>
     </Routes>
     </>
   )
