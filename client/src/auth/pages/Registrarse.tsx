@@ -5,7 +5,9 @@ export const Registrarse = () => {
   return (
     <AuthLayout titulo="Registrase">
       
-
+      <form>
+        
+      </form>
 
     </AuthLayout>
   )
