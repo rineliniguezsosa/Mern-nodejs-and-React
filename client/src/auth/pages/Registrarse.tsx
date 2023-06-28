@@ -12,16 +12,6 @@ export const Registrarse = () => {
     password:''
   })
 
-  const onSubmitForm = async(event:FormEvent<HTMLFormElement>) =>{
-      event.preventDefault()
-      try{
-        const req = await fetch(`${process.env.SERVER}/registrarse`,{method:'POST',body:JSON.stringify(formState)})
-        const resp = await req.json()
-      }
-      catch(error){
-
-      }
-  }
 
   return (
     <AuthLayout titulo="Registrase">
