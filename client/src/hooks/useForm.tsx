@@ -1,6 +1,6 @@
 import { useState,ChangeEvent } from 'react';
 import { RegisterFormTypes } from '../types/Datatypes';
-
+import { FormEvent } from 'react';
 
 export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
