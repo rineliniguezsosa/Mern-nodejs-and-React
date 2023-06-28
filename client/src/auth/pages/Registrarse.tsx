@@ -14,6 +14,7 @@ export const Registrarse = () => {
 
   const onSubmitForm = async(event:FormEvent<HTMLFormElement>) =>{
       event.preventDefault()
+      const req = await fetch(`${process.env.SERVER}/registrarse`,{method:'POST',body:JSON.stringify(formState)})
   }
 
   return (
