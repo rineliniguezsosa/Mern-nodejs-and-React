@@ -16,6 +16,7 @@ export const Registrarse = () => {
       event.preventDefault()
       try{
         const req = await fetch(`${process.env.SERVER}/registrarse`,{method:'POST',body:JSON.stringify(formState)})
+        const resp = await req.json()
       }
       catch(error){
 
