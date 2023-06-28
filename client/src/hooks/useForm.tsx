@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { RegisterForm } from '../types/Datatypes';
+import { RegisterFormTypes } from '../types/Datatypes';
 
 
 export const useForm = (initialForm = {}) =>{
