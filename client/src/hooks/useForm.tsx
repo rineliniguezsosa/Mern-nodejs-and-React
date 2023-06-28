@@ -7,6 +7,10 @@ export const useForm = (initialForm = {}) =>{
 
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
         const { name,value } = event.target
+        setformState({
+            ...formState,
+            name:[value]
+        })
     }
 
     return {
