@@ -12,7 +12,7 @@ export const Registrarse = () => {
     password:''
   })
 
-  const onSubmitForm = (event:FormEvent<HTMLFormElement>) =>{
+  const onSubmitForm = async(event:FormEvent<HTMLFormElement>) =>{
       event.preventDefault()
   }
 
