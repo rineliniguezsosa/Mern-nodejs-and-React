@@ -6,10 +6,10 @@ export const useForm = (initialForm = {}) =>{
     const [formState, sEtformState] = useState(initialForm)
 
     const handlechange = () =>{
-        
+
     }
 
     return {
-
+        handlechange
     }
 }
