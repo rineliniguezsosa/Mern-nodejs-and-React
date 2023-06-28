@@ -26,6 +26,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     return {
         ...formState,
         formState,
-        handlechange
+        handlechange,
+        onSubmitForm
     }
 }
