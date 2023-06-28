@@ -11,6 +11,10 @@ export const Registrarse = () => {
     password:''
   })
 
+  const onSubmitForm = () =>{
+    
+  }
+
   return (
     <AuthLayout titulo="Registrase">
       
