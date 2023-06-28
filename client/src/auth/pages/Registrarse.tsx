@@ -13,7 +13,7 @@ export const Registrarse = () => {
   })
 
   const onSubmitForm = (event:FormEvent<HTMLFormElement>) =>{
-
+      event.preventDefault()
   }
 
   return (
