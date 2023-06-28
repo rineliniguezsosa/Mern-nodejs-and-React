@@ -14,7 +14,7 @@ export const Registrarse = () => {
   return (
     <AuthLayout titulo="Registrase">
       
-      <form>
+      <form onSubmit={onSubmitForm}>
         <Grid container sx={{width:{sm:450}}}>
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
