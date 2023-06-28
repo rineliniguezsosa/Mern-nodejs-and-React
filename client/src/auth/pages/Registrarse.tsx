@@ -5,12 +5,12 @@ import { useForm } from '../../hooks'
 
 export const Registrarse = () => {
 
-  const {} = useForm({
+  const { handlechange } = useForm({
     nombre:'',
     email:'',
     password:''
   })
-  
+
   return (
     <AuthLayout titulo="Registrase">
       
