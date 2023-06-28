@@ -21,6 +21,7 @@ export const Registrarse = () => {
                 name="nombre"
                 onChange={handlechange} 
                 fullWidth
+                type="text"
                 />
             </Grid>
 
@@ -29,6 +30,7 @@ export const Registrarse = () => {
                 name="email"
                 onChange={handlechange}  
                 fullWidth
+                type="email"
                 />
             </Grid>
 
@@ -37,6 +39,7 @@ export const Registrarse = () => {
                 name="password"
                 onChange={handlechange}  
                 fullWidth
+                type="password"
                 />
             </Grid>
 
