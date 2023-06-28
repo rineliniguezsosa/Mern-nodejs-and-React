@@ -1,5 +1,6 @@
 import express from 'express'
 import { router } from '../routes'
+import cors from 'cors'
 import { mongoconnection } from '../connectiondb'
 import 'dotenv/config'
 const app = express()
