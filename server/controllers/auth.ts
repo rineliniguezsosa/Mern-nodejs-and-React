@@ -36,7 +36,7 @@ export const registrarse = async(req = request,res = response) => {
         await transporter.sendMail(msg)
 
         res.json({
-            mensaje:`El ${email} ha sido enviado`
+            mensaje:`¡Enhorabuena! Tu correo electrónico ${email} ha sido enviado exitosamente`
         })
     }catch(error){
         res.json({
