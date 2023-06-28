@@ -5,7 +5,7 @@ export type AuthLayoutprops = {
     titulo:string
 }
 
-export type RegisterForm = {
+export type RegisterFormTypes = {
     nombre:string,
     email:string,
     password:string
