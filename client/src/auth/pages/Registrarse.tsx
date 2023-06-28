@@ -50,7 +50,7 @@ export const Registrarse = () => {
             </Grid>
 
             <Grid item xs={12} sx={{mt:2}}>
-                <Button fullWidth variant="contained">Registrar</Button>
+                <Button type="submit" fullWidth variant="contained">Registrar</Button>
             </Grid>
         </Grid>
       </form>
