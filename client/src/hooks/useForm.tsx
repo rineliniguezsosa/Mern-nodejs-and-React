@@ -9,7 +9,7 @@ export const useForm = (initialForm = {}) =>{
         const { name,value } = event.target
         setformState({
             ...formState,
-            name:[value]
+            [name]:value
         })
     }
 
