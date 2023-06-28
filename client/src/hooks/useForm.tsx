@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState,ChangeEvent } from 'react';
 import { RegisterFormTypes } from '../types/Datatypes';
 
 
