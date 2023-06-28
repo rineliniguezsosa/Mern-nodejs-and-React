@@ -1,7 +1,7 @@
 import { Grid,TextField,Button } from '@mui/material'
 import { AuthLayout } from '../Layout'
 import { useForm } from '../../hooks'
-import { FormEvent } from 'react';
+
 
 
 export const Registrarse = () => {
