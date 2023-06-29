@@ -11,6 +11,8 @@ export const Navbar = () => {
                 <Link to="/"><Button sx={{color:'white'}}>Home</Button></Link>
 
                 <Link to="/auth/registrarse"><Button sx={{color:'white'}}>Registrarse</Button></Link>
+
+                <Link to="/auth/login"><Button sx={{color:'white'}}>Login</Button></Link>
             </Stack>
         </Toolbar>
     </AppBar>
