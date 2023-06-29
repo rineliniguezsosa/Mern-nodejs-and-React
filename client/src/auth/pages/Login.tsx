@@ -4,6 +4,8 @@ import { AuthLayout } from '../Layout'
 
 export const Login = () => {
   return (
-    <div>Login</div>
+    <AuthLayout titulo="Login">
+
+    </AuthLayout>
   )
 }
