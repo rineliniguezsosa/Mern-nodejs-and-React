@@ -13,6 +13,8 @@ export const Authroutes = () => {
         <Route path="/" element={<Home/>}/>
 
         <Route path="/registrarse" element={<Registrarse/>}/>
+
+        <Route path="/login" element={<Login/>}/>
     </Routes>
     </>
   )
