@@ -49,6 +49,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         formState,
         handlechange,
         onSubmitForm,
+        onSubmitFormLogin,
         mensaje,
     }
 }
