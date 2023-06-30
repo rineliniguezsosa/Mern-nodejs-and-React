@@ -6,7 +6,7 @@ import { useForm } from '../../hooks'
 
 export const Registrarse = () => {
 
-  const { formState,handlechange,onSubmitForm } = useForm({
+  const { formState,handlechange,onSubmitFormRegistrar } = useForm({
     nombre:'',
     email:'',
     password:''
@@ -15,8 +15,8 @@ export const Registrarse = () => {
 
   return (
     <AuthLayout titulo="Registrase">
-      
-      <form onSubmit={onSubmitForm}>
+
+      <form onSubmit={onSubmitFormRegistrar}>
         <Grid container sx={{width:{sm:450}}}>
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
