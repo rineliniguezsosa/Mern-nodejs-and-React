@@ -29,6 +29,12 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
 
     const onSubmitFormLogin = async(event:FormEvent<HTMLFormElement>)=>{
         event.preventDefault()
+        
+        try{
+
+        }catch(error){
+
+        }
     }
 
     return {
