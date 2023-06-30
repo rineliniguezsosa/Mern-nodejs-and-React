@@ -18,6 +18,17 @@ export const Login = () => {
                     value={formState.email}
                     />
                 </Grid>
+
+                <Grid item xs={12} sx={{mt:2}}>
+                    <TextField
+                    name="password"
+                    onChange={handlechange} 
+                    fullWidth
+                    type="password"
+                    placeholder="Password"
+                    value={formState.password}
+                    />
+                </Grid>
           </Grid>
         </form>
     </AuthLayout>
