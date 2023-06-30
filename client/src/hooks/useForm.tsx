@@ -25,19 +25,6 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
             console.log(error)
         }
         
-
-        // try{
-        //   const req = await fetch("http://localhost:5000/api/auth/registrarse",{method:'POST',headers: {
-        //     'Access-Control-Allow-Origin': 'http://localhost:5000',
-        //   },body:JSON.stringify(formState)})
-        //   const resp = await req.json()
-        //   console.log(resp)
-        // //   setMensaje(resp.data.res.mensaje)
-        // }
-        // catch(error){
-        //     console.log(error.msg)
-        // }
-        
     }
 
     const onSubmitFormLogin = async = ()=>{
