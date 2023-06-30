@@ -35,6 +35,10 @@ export const Login = () => {
                     value={formState.password}
                     />
                 </Grid>
+
+                <Grid item xs={12} sx={{mt:2}}>
+                    <Button type="submit" fullWidth variant="contained">Login</Button>
+                </Grid>
           </Grid>
         </form>
     </AuthLayout>
