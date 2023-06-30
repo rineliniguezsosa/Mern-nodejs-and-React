@@ -1,9 +1,11 @@
 import { useState,ChangeEvent } from 'react';
 import { RegisterFormTypes } from '../types/Datatypes';
 import { FormEvent } from 'react';
+import axios from 'axios'
 
 export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
+    const [mensaje,setMensaje] = useState('')
     console.log(formState)
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
         const { name,value } = event.target
@@ -15,18 +17,38 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
 
     const onSubmitForm = async(event:FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
+        
         try{
-          const req = await fetch(`${process.env.SERVER}/registrarse`,{method:'POST',body:JSON.stringify(formState)})
-          const resp = await req.json()
+            const response = await axios.post("http://localhost:5000/api/auth/registrarse",formState)
+            console.log(response.data)
+        }catch(error){
+            console.log(error)
         }
-        catch(error){
-  
-        }
+        
+
+        // try{
+        //   const req = await fetch("http://localhost:5000/api/auth/registrarse",{method:'POST',headers: {
+        //     'Access-Control-Allow-Origin': 'http://localhost:5000',
+        //   },body:JSON.stringify(formState)})
+        //   const resp = await req.json()
+        //   console.log(resp)
+        // //   setMensaje(resp.data.res.mensaje)
+        // }
+        // catch(error){
+        //     console.log(error.msg)
+        // }
+        
     }
     return {
         ...formState,
         formState,
         handlechange,
-        onSubmitForm
+        onSubmitForm,
+        mensaje,
     }
 }
+
+
+// headers: {
+                //         'Access-Control-Allow-Origin': 'http://localhost:5000',
+                // }
