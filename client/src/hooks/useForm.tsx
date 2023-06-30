@@ -31,9 +31,10 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         event.preventDefault()
         
         try{
-
+            const response = await axios.post("http://localhost:5000/api/auth/login",formState)
+            console.log(response.data)
         }catch(error){
-
+            console.log(error)
         }
     }
 
