@@ -27,7 +27,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         
     }
 
-    const onSubmitFormLogin = async()=>{
+    const onSubmitFormLogin = async(event:FormEvent<HTMLFormElement>)=>{
 
     }
 
