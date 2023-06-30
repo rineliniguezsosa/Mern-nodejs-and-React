@@ -47,8 +47,3 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         mensaje,
     }
 }
-
-
-// headers: {
-                //         'Access-Control-Allow-Origin': 'http://localhost:5000',
-                // }
