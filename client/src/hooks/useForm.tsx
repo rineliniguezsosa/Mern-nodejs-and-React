@@ -7,6 +7,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
     const [mensaje,setMensaje] = useState('')
     console.log(formState)
+    
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
         const { name,value } = event.target
         setformState({
@@ -24,7 +25,8 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         }catch(error){
             console.log(error)
         }
-        
+
+        setformState({nombre:'',email:'',password:''})
     }
 
     const onSubmitFormLogin = async(event:FormEvent<HTMLFormElement>)=>{
