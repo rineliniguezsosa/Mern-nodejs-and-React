@@ -38,6 +38,8 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         }catch(error){
             console.log(error)
         }
+
+        setformState({email:'',password:''})
     }
 
     return {
