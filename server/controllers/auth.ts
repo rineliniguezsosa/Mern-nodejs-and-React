@@ -54,7 +54,7 @@ export const login = async(req = request,resp = response)=>{
         
         if(!user){
             return resp.status(400).json({
-                msg:'Ups, parece que el correo electrónico no coincide'
+                mensaje:'Ups, parece que el correo electrónico no coincide'
             })
         }
 
@@ -65,7 +65,7 @@ export const login = async(req = request,resp = response)=>{
 
         if(!passwordmatch){
             return resp.status(400).json({
-                msg:'El password no coincide'
+                mensaje:'El password no coincide'
         })}else{
             const token = jwt.sign({_id:user._id},`${process.env.JWTACTIVATEACCOUNT}`,{expiresIn:'7d'})
             const {_id,nombre,email,role} = user
@@ -87,7 +87,7 @@ export const activatucuenta = async(req = request,resp = response)=>{
         jwt.verify(token,`${process.env.JWTACTIVATEACCOUNT}`,(error:VerifyErrors | null)=>{
             if(error){
                 return resp.status(400).json({
-                    msg:'El link expiro autenticate de nuevo'
+                    mensaje:'El link expiro autenticate de nuevo'
                 })
             }
         })
@@ -104,11 +104,11 @@ export const activatucuenta = async(req = request,resp = response)=>{
         await nuevousuario.save()
 
         return resp.status(200).json({
-            msg:`¡Bienvenido ${nombre}! Inicia sesión para continuar`
+            mensaje:`¡Bienvenido ${nombre}! Inicia sesión para continuar`
         })
     } catch (error) {
         return resp.status(400).json({
-            msg:'Algo sucedio :( intente de nuevo'
+            mensaje:'Algo sucedio :( intente de nuevo'
         })
     }
 }
