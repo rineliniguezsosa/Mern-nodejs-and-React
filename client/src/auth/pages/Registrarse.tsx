@@ -11,7 +11,7 @@ export const Registrarse = () => {
     email:'',
     password:''
   })
-
+  console.log(mensaje)
 
   return (
     <AuthLayout titulo="Registrase">
