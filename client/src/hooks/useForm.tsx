@@ -1,6 +1,5 @@
-import { useState,ChangeEvent } from 'react';
+import { useState,ChangeEvent,FormEvent } from 'react';
 import { RegisterFormTypes } from '../types/Datatypes';
-import { FormEvent } from 'react';
 import axios from 'axios'
 
 export const useForm = (initialForm:RegisterFormTypes) =>{
