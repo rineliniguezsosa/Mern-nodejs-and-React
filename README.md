@@ -29,3 +29,6 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 ## Instalación
 
 1. Clona este repositorio en tu máquina local:
+
+```shell
+https://github.com/rineliniguezsosa/Mern-nodejs-and-React.git
