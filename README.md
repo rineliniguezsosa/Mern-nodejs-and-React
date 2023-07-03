@@ -35,3 +35,7 @@ https://github.com/rineliniguezsosa/Mern-nodejs-and-React.git
 ```
 
 1. Navega al directorio del proyecto:
+
+```shell
+cd client
+```
