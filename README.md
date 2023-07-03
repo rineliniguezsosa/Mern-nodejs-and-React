@@ -25,3 +25,5 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 
 - Node.js (versión >=14.18.0)
 - npm (versión >=8.0.0)
+
+## Instalación
