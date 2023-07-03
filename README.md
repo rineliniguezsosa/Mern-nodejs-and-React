@@ -47,3 +47,5 @@ npm install
 ```
 
 ## USO
+
+1. Ejecuta el siguiente comando para iniciar el servidor de desarrollo:
