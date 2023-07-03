@@ -55,3 +55,9 @@ npm run dev
 ```
 
 1. Abre tu navegador y visita http://127.0.0.1:5173/ para ver la aplicación en funcionamiento
+
+<br>
+
+## Aplicación aún en construcción 
+## Seguimos trabajando :hammer:
+
