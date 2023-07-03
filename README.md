@@ -27,3 +27,5 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 - npm (versión >=8.0.0)
 
 ## Instalación
+
+1. Clona este repositorio en tu máquina local:
