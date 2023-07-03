@@ -14,3 +14,7 @@ Es un framework de aplicaciones web para Node.js que facilita la creación de AP
 **Reactjs**
 
 Es una biblioteca de JavaScript para construir interfaces de usuario interactivas y reactivas. React se utiliza en el frontend de una aplicación MERN para crear componentes reutilizables
+
+**Node.js:** 
+
+Es un entorno de ejecución de JavaScript del lado del servidor que permite ejecutar JavaScript fuera del navegador. Node.js es utilizado en el backend de una aplicación MERN para gestionar solicitudes HTTP, interactuar con la base de datos y realizar operaciones del lado del servidor.
