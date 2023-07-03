@@ -39,3 +39,5 @@ https://github.com/rineliniguezsosa/Mern-nodejs-and-React.git
 ```shell
 cd client
 ```
+
+1. Instala las dependencias del proyecto:
