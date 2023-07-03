@@ -41,3 +41,7 @@ cd client
 ```
 
 1. Instala las dependencias del proyecto:
+
+```shell
+npm install
+```
