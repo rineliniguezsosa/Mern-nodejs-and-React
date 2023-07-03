@@ -20,3 +20,5 @@ Es una biblioteca de JavaScript para construir interfaces de usuario interactiva
 Es un entorno de ejecución de JavaScript del lado del servidor que permite ejecutar JavaScript fuera del navegador. Node.js es utilizado en el backend de una aplicación MERN para gestionar solicitudes HTTP, interactuar con la base de datos y realizar operaciones del lado del servidor.
 
 ## Requisitos previos del lado del cliente
+
+Asegúrate de tener instalado lo siguiente en tu máquina:
