@@ -22,3 +22,6 @@ Es un entorno de ejecución de JavaScript del lado del servidor que permite ejec
 ## Requisitos previos del lado del cliente
 
 Asegúrate de tener instalado lo siguiente en tu máquina:
+
+- Node.js (versión >=14.18.0)
+- npm (versión >=8.0.0)
