@@ -80,6 +80,8 @@ cd server
 npm install
 ```
 
+3. Crea un archivo .env en el directorio raíz del proyecto y configura las variables de entorno necesarias. Asegúrate de incluir las siguientes variables:
+
 <br>
 
 ## Aplicación aún en construcción 
