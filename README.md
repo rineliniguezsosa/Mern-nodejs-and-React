@@ -62,6 +62,8 @@ npm run dev
 
 Asegúrate de tener instalado lo siguiente en tu máquina:
 
+- MongoDB: Asegúrate de tener una instancia de MongoDB en tu máquina local o acceso a una base de datos remota.
+
 <br>
 
 ## Aplicación aún en construcción 
