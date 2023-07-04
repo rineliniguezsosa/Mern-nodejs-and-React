@@ -96,6 +96,8 @@ JWTACTIVATEACCOUNT="YOUR_PRIVATE_KEY"
 
 ```
 
+**Asegúrate de reemplazar los valores de las variables de entorno**
+
 <br>
 
 ## Aplicación aún en construcción 
