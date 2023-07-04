@@ -60,6 +60,8 @@ npm run dev
 
 ## Requisitos previos del lado del servidor
 
+Asegúrate de tener instalado lo siguiente en tu máquina:
+
 <br>
 
 ## Aplicación aún en construcción 
