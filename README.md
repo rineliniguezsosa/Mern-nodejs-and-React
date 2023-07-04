@@ -68,6 +68,8 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 
 Sigue estos pasos para configurar el proyecto antes de ejecutarlo:
 
+1. Navega al directorio del proyecto:
+
 <br>
 
 ## Aplicación aún en construcción 
