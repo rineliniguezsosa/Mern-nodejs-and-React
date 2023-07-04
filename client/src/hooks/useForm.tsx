@@ -4,6 +4,7 @@ import axios from 'axios'
 
 export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
+    const [open, setOpen] = useState(false) //gestiona el Snackbar
     const [mensaje,setMensaje] = useState('')
     console.log(formState)
     
