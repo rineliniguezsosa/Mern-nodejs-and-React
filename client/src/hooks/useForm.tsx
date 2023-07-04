@@ -1,4 +1,4 @@
-import { useState,ChangeEvent,FormEvent } from 'react';
+import { useState,ChangeEvent,FormEvent,SyntheticEvent } from 'react';
 import { RegisterFormTypes } from '../types/Datatypes';
 import axios from 'axios'
 
