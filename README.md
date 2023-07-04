@@ -74,6 +74,8 @@ Sigue estos pasos para configurar el proyecto antes de ejecutarlo:
 cd server
 ```
 
+2. Instala las dependencias del proyecto:
+
 <br>
 
 ## Aplicación aún en construcción 
