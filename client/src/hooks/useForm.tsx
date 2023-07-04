@@ -44,7 +44,9 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
 
     //oculta el componente Snackbar
     const closeSnackbar = (event: SyntheticEvent | Event, reason?: string) =>{
-
+        if(reason === 'clickaway'){
+            return ;
+        }
     }
 
     return {
