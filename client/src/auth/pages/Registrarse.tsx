@@ -1,4 +1,4 @@
-import { Grid,TextField,Button } from '@mui/material'
+import { Grid,TextField,Button,Snackbar } from '@mui/material'
 import { AuthLayout } from '../Layout'
 import { useForm } from '../../hooks'
 
@@ -17,7 +17,7 @@ export const Registrarse = () => {
     <AuthLayout titulo="Registrase">
 
       <form onSubmit={onSubmitFormRegistrar}>
-        <Grid container sx={{width:{sm:450}}}>
+        <Grid container sx={{width:{sm:450}}}> 
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
                 name="nombre"
