@@ -66,6 +66,8 @@ Asegúrate de tener instalado lo siguiente en tu máquina:
 
 ## Configuración
 
+Sigue estos pasos para configurar el proyecto antes de ejecutarlo:
+
 <br>
 
 ## Aplicación aún en construcción 
