@@ -58,5 +58,6 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         onSubmitFormLogin,
         mensaje,
         open,
+        closeSnackbar
     }
 }
