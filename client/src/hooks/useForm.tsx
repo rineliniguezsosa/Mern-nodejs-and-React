@@ -43,7 +43,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     }
 
     //oculta el componente Snackbar
-    const closeSnackbar = () =>{
+    const closeSnackbar = (event: SyntheticEvent | Event, reason?: string) =>{
 
     }
 
