@@ -47,6 +47,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         if(reason === 'clickaway'){
             return ;
         }
+        setOpen(false)
     }
 
     return {
