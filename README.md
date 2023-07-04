@@ -58,6 +58,10 @@ npm run dev
 
 <br>
 
+## Requisitos previos del lado del servidor
+
+<br>
+
 ## Aplicación aún en construcción 
 ## Seguimos trabajando :hammer:
 
