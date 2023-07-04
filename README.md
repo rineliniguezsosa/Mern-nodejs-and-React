@@ -76,6 +76,10 @@ cd server
 
 2. Instala las dependencias del proyecto:
 
+```shell
+npm install
+```
+
 <br>
 
 ## Aplicación aún en construcción 
