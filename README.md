@@ -82,6 +82,20 @@ npm install
 
 3. Crea un archivo .env en el directorio raíz del proyecto y configura las variables de entorno necesarias. Asegúrate de incluir las siguientes variables:
 
+```.env
+
+# DATOS ethernal.email
+USER="tu_usuario_ethereal_email"
+PASS="tu_contraseña_ethereal_email"
+
+# URL CONEXION A LA BASE DE DATOS
+MONGOCONNECTIONSTRING=URL_de_conexión_a_tu_base_de_datos
+
+# TU CLAVE SECRETA DE JSONWEBTOKEN
+JWTACTIVATEACCOUNT="YOUR_PRIVATE_KEY"
+
+```
+
 <br>
 
 ## Aplicación aún en construcción 
