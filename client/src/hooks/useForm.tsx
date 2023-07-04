@@ -42,6 +42,11 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
         setformState({email:'',password:''})
     }
 
+    //oculta el componente Snackbar
+    const closeSnackbar = () =>{
+
+    }
+
     return {
         ...formState,
         formState,
