@@ -19,7 +19,7 @@ export const Registrarse = () => {
       <form onSubmit={onSubmitFormRegistrar}>
         <Grid container sx={{width:{sm:450}}}>
 
-            <Snackbar message={mensaje} open={open} autoHideDuration={5000} onClose={handleclose}/>
+            <Snackbar message={mensaje} open={open} autoHideDuration={5000} onClose={closeSnackbar}/>
 
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
