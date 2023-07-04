@@ -70,6 +70,10 @@ Sigue estos pasos para configurar el proyecto antes de ejecutarlo:
 
 1. Navega al directorio del proyecto:
 
+```shell
+cd server
+```
+
 <br>
 
 ## Aplicación aún en construcción 
