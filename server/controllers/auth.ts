@@ -5,7 +5,7 @@ import { usuario } from '../models'
 import bcrypt from 'bcrypt'
 
 //Metodo envia un email al usuario
-export const registrarse = async(req = request,res = response) => {
+export const registrarse = async(req: Request,res : Response) => {
     const {nombre,email,password} = req.body //datos del usuario
     console.log(nombre,email,password)
 
@@ -46,7 +46,7 @@ export const registrarse = async(req = request,res = response) => {
 }
 
 //Metodo para verificar que un usuario exista en la DB
-export const login = async(req = request,resp = response)=>{
+export const login = async(req : Request,resp : Response)=>{
     const {email,password} = req.body
 
     try {
@@ -80,7 +80,7 @@ export const login = async(req = request,resp = response)=>{
     }
 }
 
-export const activatucuenta = async(req = request,resp = response)=>{
+export const activatucuenta = async(req : Request,resp : Response)=>{
     const {token} = req.body
 
     if(token){
