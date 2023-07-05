@@ -1,4 +1,4 @@
-import {request,response} from 'express'
+import { Request,Response } from 'express'
 import nodemailer from 'nodemailer'
 import jwt,{ VerifyErrors,JwtPayload } from 'jsonwebtoken'
 import { usuario } from '../models'
