@@ -10,3 +10,11 @@ export type RegisterFormTypes = {
     email:string,
     password:string
 }
+
+export type RegisterFormErrors = {
+    location:string,
+    msg:string,
+    path:string,
+    type:string,
+    value:string
+}
