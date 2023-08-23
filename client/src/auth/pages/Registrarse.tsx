@@ -6,7 +6,7 @@ import { useForm } from '../../hooks'
 
 export const Registrarse = () => {
 
-  const { formState,handlechange,onSubmitFormRegistrar,mensaje,error,open,closeSnackbar } = useForm({
+  const { formState,handlechange,onSubmitFormRegistrar,mensaje,errors,open,closeSnackbar } = useForm({
     nombre:'',
     email:'',
     password:''
