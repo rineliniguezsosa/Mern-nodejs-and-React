@@ -1,12 +1,12 @@
 import { useState,ChangeEvent,FormEvent,SyntheticEvent } from 'react';
-import { RegisterFormTypes } from '../types/Datatypes';
+import { RegisterFormTypes,RegisterFormErrors  } from '../types/Datatypes';
 import axios from 'axios'
 
 export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
     const [open, setOpen] = useState(false) //gestiona el Snackbar
     const [mensaje,setMensaje] = useState<string>('')
-    const [error,setErrors] = useState<string[] | null>(null)
+    const [error,setErrors] = useState<RegisterFormErrors[]>([])
     console.log(error)
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
         const { name,value } = event.target
@@ -23,7 +23,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
             const response = await axios.post("http://localhost:5000/api/auth/registrarse",formState)
             setMensaje(response.data.mensaje)
             setOpen(true)
-        }catch(error:string){
+        }catch(error:any){
             setErrors(error.response.data.errors)
         }
 
