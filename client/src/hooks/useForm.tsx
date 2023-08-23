@@ -5,7 +5,7 @@ import axios from 'axios'
 export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
     const [open, setOpen] = useState(false) //gestiona el Snackbar
-    const [mensaje,setMensaje] = useState<string | null>('')
+    const [mensaje,setMensaje] = useState<string>('')
     const [error,setErrors] = useState<string[] | null>(null)
     console.log(error)
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
@@ -23,8 +23,8 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
             const response = await axios.post("http://localhost:5000/api/auth/registrarse",formState)
             setMensaje(response.data.mensaje)
             setOpen(true)
-        }catch(error){
-            console.log(error)
+        }catch(error:string){
+            setErrors(error.response.data.errors)
         }
 
         setformState({nombre:'',email:'',password:''})
