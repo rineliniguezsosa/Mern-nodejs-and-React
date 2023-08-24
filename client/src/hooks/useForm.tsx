@@ -6,7 +6,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     const [formState, setformState] = useState<RegisterFormTypes>(initialForm)
     const [open, setOpen] = useState(false) //gestiona el Snackbar
     const [mensaje,setMensaje] = useState<string>('')
-    const [errors,setErrors] = useState<RegisterFormErrors[] | undefined>(undefined)
+    const [errors,setErrors] = useState<RegisterFormErrors[] | []>([])
     console.log(errors)
     const handlechange = (event:ChangeEvent<HTMLInputElement>) =>{
         const { name,value } = event.target
