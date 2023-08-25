@@ -1,4 +1,4 @@
-import { useState,ChangeEvent,FormEvent,SyntheticEvent } from 'react';
+import { useState,ChangeEvent,FormEvent } from 'react';
 import { RegisterFormTypes,RegisterFormErrors  } from '../types/Datatypes';
 import axios from 'axios'
 
@@ -25,6 +25,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
             setOpen(true)
         }catch(error:any){
             setErrors(error.response.data.errors)
+
         }
 
         setformState({nombre:'',email:'',password:''})
@@ -44,10 +45,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     }
 
     //oculta el componente Snackbar
-    const closeSnackbar = (event: SyntheticEvent | Event, reason?: string) =>{
-        if(reason === 'clickaway'){
-            return ;
-        }
+    const closeSnackbar = () =>{
         setOpen(false)
     }
 
