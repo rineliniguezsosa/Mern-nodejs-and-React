@@ -1,7 +1,6 @@
-import { Grid,TextField,Button,Snackbar,Alert,AlertProps } from '@mui/material'
+import { Grid,TextField,Button,Snackbar } from '@mui/material'
 import { AuthLayout } from '../Layout'
 import { useForm } from '../../hooks'
-import { forwardRef } from 'react'
 
 
 export const Registrarse = () => {
