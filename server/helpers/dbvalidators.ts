@@ -9,5 +9,5 @@ export const  existemail = async(email = "")=>{
 }
 
 export const Noexistemail = async(email ="")=>{
-
+    const existemail = await usuario.findOne({email})
 }
