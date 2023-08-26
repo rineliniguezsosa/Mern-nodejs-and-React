@@ -55,6 +55,12 @@ export const Registrarse = () => {
                 value={formState.password}
                 />
             </Grid>
+            
+            {errors.map((e,index)=>(
+                <Grid key={index} item xs={12}>
+                  <Typography variant="h5" sx={{fontFamily:'sans-serif',color:'red',fontSize:17}}>{e.msg}</Typography>
+                </Grid>
+            ))}
 
             <Grid item xs={12} sx={{mt:2}}>
                 <Button type="submit" fullWidth variant="contained">Registrar</Button>
