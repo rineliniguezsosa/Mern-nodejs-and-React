@@ -1,4 +1,4 @@
-import { Grid,TextField,Button,Snackbar } from '@mui/material'
+import { Grid,TextField,Button,Snackbar,Typography } from '@mui/material'
 import { AuthLayout } from '../Layout'
 import { useForm } from '../../hooks'
 import MuiAlert from '@mui/material/Alert';
@@ -10,7 +10,7 @@ export const Registrarse = () => {
     email:'',
     password:''
   })
-  console.log(mensaje) 
+  console.log("Los errors",errors)
   return (
     <AuthLayout titulo="Registrase">
 
@@ -26,7 +26,7 @@ export const Registrarse = () => {
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
                 name="nombre"
-                onChange={handlechange} 
+                onChange={handlechange}
                 fullWidth
                 type="text"
                 placeholder="Nombre"
@@ -37,7 +37,7 @@ export const Registrarse = () => {
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
                 name="email"
-                onChange={handlechange}  
+                onChange={handlechange}
                 fullWidth
                 type="email"
                 placeholder="Email"
@@ -48,7 +48,7 @@ export const Registrarse = () => {
             <Grid item xs={12} sx={{mt:2}}>
                 <TextField
                 name="password"
-                onChange={handlechange}  
+                onChange={handlechange}
                 fullWidth
                 type="password"
                 placeholder="Password"
