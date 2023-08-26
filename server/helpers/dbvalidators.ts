@@ -7,3 +7,7 @@ export const  existemail = async(email = "")=>{
         throw new Error(`El ${email} ya esta registrado`)
     }
 }
+
+export const Noexistemail = async(email ="")=>{
+
+}
