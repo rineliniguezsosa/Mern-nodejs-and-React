@@ -28,6 +28,7 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
             const response = await axios.post("http://localhost:5000/api/auth/registrarse",formState)
             setMensaje(response.data.mensaje)
             setOpen(true)
+            setErrors([])
         }catch(error:any){
             setErrors(error.response.data.errors)
 
