@@ -12,6 +12,6 @@ export const uservalidationregister = [
 
 export const userloginvalidator = [
     check('email').isEmail().withMessage("*Es necesario un formato valido de Email"),
-    check('password').isLength({min:6}).withMessage("Debe contener al menos 6 caracteres"),
+    check('password').isLength({min:6}).withMessage("*El campo Password debe de contener al menos 6 caracteres"),
     validarerrores
 ]
