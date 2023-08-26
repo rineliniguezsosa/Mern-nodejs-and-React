@@ -1,6 +1,6 @@
 import { check } from 'express-validator'
 import { validarerrores } from '../middleware'
-import { existemail } from '../helpers'
+import { existemail,Noexistemail } from '../helpers'
 
 export const uservalidationregister = [
     check('nombre').notEmpty().withMessage('*El campo Nombre es requerido'),
