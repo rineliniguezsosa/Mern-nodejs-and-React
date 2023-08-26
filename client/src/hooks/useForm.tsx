@@ -18,9 +18,9 @@ export const useForm = (initialForm:RegisterFormTypes) =>{
     }
 
     useEffect(()=>{ 
-        
+        setErrors(errors);
     },[errors.length > 0])
-    
+
     const onSubmitFormRegistrar = async(event:FormEvent<HTMLFormElement>) =>{
         event.preventDefault()
         
