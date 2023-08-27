@@ -4,6 +4,7 @@ import { existemail,Noexistemail } from '../helpers'
 
 export const uservalidationregister = [
     check('nombre').notEmpty().withMessage('*El campo Nombre es requerido'),
+    check('nombre').isAlpha().withMessage('*El campo Nombre solo permite letras'),
     check('email').notEmpty().withMessage('*El campo Email es requerido'),
     check('email').isEmail().withMessage("*Es necesario un formato valido de Email"),
     check('email').custom(existemail), //valida si el email ya existe
