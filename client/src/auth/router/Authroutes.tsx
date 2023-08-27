@@ -1,9 +1,7 @@
 import { Routes,Route } from 'react-router-dom'
 import { Home } from '../pages/Home';
 import { Navbar } from '../Layout/Navbar';
-import { Registrarse } from '../pages/Registrarse';
-import { Login } from '../pages/Login';
-import { Activate } from '../pages';
+import { Activate,Login,Registrarse } from '../pages';
 
 
 export const Authroutes = () => {
