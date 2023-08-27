@@ -13,7 +13,7 @@ export const Noexistemail = async(email ="")=>{
 
     if(email){
         if(!existemail){
-            throw new Error(`El usuario con el ${email} no existe,porfavor registrarte`)
+            throw new Error(`El usuario con el email ${email} no existe,porfavor registrarte`)
         }
     }
     
