@@ -11,7 +11,10 @@ export const  existemail = async(email = "")=>{
 export const Noexistemail = async(email ="")=>{
     const existemail = await usuario.findOne({email})
 
-    if(!existemail){
-        throw new Error(`El usuario con el ${email} no existe,porfavor registrarte`)
+    if(email){
+        if(!existemail){
+            throw new Error(`El usuario con el ${email} no existe,porfavor registrarte`)
+        }
     }
+    
 }
