@@ -14,7 +14,7 @@ export const Authroutes = () => {
 
         <Route path="/login" element={<Login/>}/>
 
-        <Route path="/activate:token" element={<Activate/>}/>
+        <Route path="/user/activate/:token" element={<Activate/>}/>
     </Routes>
     </>
   )
