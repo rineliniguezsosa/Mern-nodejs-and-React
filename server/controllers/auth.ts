@@ -26,8 +26,10 @@ export const registrarse = async(req: Request,res : Response) => {
         subject:`Activate your count ${nombre}`, 
         html: `
         <strong>please follow this link for sign in now</strong>
-        <a href="${process.env.CLIENT}/auth/user/activate/${token}">follow this link</a>
-        <p>This message can use sentitive information </p>
+            
+        <a href="${process.env.CLIENT}/auth/user/activate?token=${token}">sigue el link</a>
+
+        <p>This message can use sensitive information </p>
         <p>${process.env.CLIENT}</p>
         `, 
     })
