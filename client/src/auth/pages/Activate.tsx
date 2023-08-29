@@ -4,6 +4,8 @@ import queryString from 'query-string';
 
 export const Activate = () => {
   const location = useLocation()
+  const { token } = queryString.parse(location.search)
+  console.log(token)
   console.log(location)
   return (
     <div>Activate</div>
