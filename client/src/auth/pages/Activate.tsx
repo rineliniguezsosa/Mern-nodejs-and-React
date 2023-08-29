@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom"
 
 
 export const Activate = () => {
-  const { token } = useParams()
+  const location = useLocation()
   console.log(token)
   return (
     <div>Activate</div>
