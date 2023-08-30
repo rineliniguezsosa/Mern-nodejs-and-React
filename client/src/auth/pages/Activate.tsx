@@ -7,6 +7,14 @@ export const Activate = () => {
   const location = useLocation()
   const { token } = queryString.parse(location.search)
 
+  const activate = async(token = '') => {
+    try {
+       const req = await axios.post("http://localhost:5000/api/auth/registrarse",token)
+    } catch (error) {
+        
+    }
+  }
+
   useEffect(() => {
     console.log("this token change",token)
   }, [token])
