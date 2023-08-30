@@ -1,7 +1,7 @@
 import { useEffect } from "react"
 import { useLocation } from "react-router-dom"
 import queryString from 'query-string';
-import axios from "axios";
+
 
 export const Activate = () => {
   const location = useLocation()
