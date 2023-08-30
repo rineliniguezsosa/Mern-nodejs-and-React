@@ -9,14 +9,14 @@ export const Activate = () => {
 
   const activate = async(token = '') => {
     try {
-       const req = await axios.post("http://localhost:5000/api/auth/registrarse",token)
+       const req = await axios.post("http://localhost:5000/api/auth/activa-tu-cuenta",token)
     } catch (error) {
         
     }
   }
 
   useEffect(() => {
-    console.log("this token change",token)
+     activate(token)
   }, [token])
   
   console.log(token)
