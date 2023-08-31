@@ -28,8 +28,13 @@ export const Activate = () => {
   return (
     <Grid container className="h-screen border-black border-2 flex flex-col justify-center items-center">
       <Grid item xs={5} className="border-black border-2">
-          <Typography className="font-sans font-bold text-[15px]">¡Bienvenido de vuelta rinel! Haz clic para activar tu cuenta ahora mismo.</Typography>
+          <Typography className="font-sans font-bold text-[15px] text-center">¡Bienvenido de vuelta rinel! Haz clic para activar tu cuenta ahora mismo.</Typography>
       </Grid>
+
+      <Grid item xs={3} className="border-black border-2">
+        <Button variant="outlined">Activa tu cuenta</Button>
+      </Grid>
+
     </Grid>
   )
 }
