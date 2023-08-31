@@ -10,8 +10,9 @@ export const Activate = () => {
   const activate = async(token = '') => {
     try {
        const req = await axios.post("http://localhost:5000/api/auth/activa-tu-cuenta",{token:token})
+       console.log(req.data)
     } catch (error) {
-  
+      console.log(error)
     }
   }
 
