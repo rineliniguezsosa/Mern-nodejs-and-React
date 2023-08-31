@@ -26,7 +26,7 @@ export const Activate = () => {
   console.log(token)
   console.log(location)
   return (
-    <Grid container className="h-screen border-black border-2">
+    <Grid container className="h-screen border-black border-2 flex flex-col justify-center items-center">
       <span>sjsdj</span>
     </Grid>
   )
