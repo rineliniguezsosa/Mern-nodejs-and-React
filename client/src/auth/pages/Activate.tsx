@@ -16,7 +16,9 @@ export const Activate = () => {
   }
 
   useEffect(() => {
-     activate(token)  
+    if(token){
+     activate(token) 
+    } 
   }, [token])
   
   console.log(token)
