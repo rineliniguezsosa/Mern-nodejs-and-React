@@ -1,4 +1,4 @@
-import { Grid } from '@mui/material'
+import { Grid,Typography } from '@mui/material'
 import { useEffect,useState } from "react"
 import { useLocation } from "react-router-dom"
 import queryString from 'query-string';
