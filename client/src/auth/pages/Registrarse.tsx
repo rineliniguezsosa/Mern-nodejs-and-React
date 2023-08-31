@@ -58,7 +58,7 @@ export const Registrarse = () => {
 
             {errors.map((e,index)=>(
                 <Grid key={index} item xs={12} sx={{mt:1}}>
-                  <Typography className="text-red-500" variant="h5" sx={{fontFamily:'sans-serif',color:'red',fontSize:17}}>{e.msg}</Typography>
+                  <Typography className="text-red-500 text-[17px]" variant="h5" sx={{fontFamily:'sans-serif',color:'red',fontSize:17}}>{e.msg}</Typography>
                 </Grid>
             ))}
 
