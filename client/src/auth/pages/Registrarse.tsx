@@ -56,15 +56,17 @@ export const Registrarse = () => {
                 />
             </Grid>
 
+            <Grid item xs={12} sx={{mt:2}}>
+                <Button type="submit" fullWidth variant="contained">Registrar</Button>
+            </Grid>
+
+            {/* errores */}
             {errors.map((e,index)=>(
                 <Grid key={index} item xs={12} sx={{mt:1}}>
                   <Typography className="text-red-700 text-[10px] font-sans">{e.msg}</Typography>
                 </Grid>
             ))}
-
-            <Grid item xs={12} sx={{mt:2}}>
-                <Button type="submit" fullWidth variant="contained">Registrar</Button>
-            </Grid>
+            
         </Grid>
       </form>
 
