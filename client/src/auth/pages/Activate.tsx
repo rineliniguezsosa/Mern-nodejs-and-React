@@ -7,7 +7,9 @@ import axios from "axios";
 export const Activate = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams();
-  const { token }: {token?:string} = queryString.parse(location.search)
+
+  const token = searchParams.get('token');
+ 
   const [usuario, setUsuario] = useState({
     nombre:'',
     token:'',
