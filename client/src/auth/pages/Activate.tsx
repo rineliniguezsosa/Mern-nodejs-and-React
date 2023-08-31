@@ -25,6 +25,8 @@ export const Activate = () => {
   console.log(token)
   console.log(location)
   return (
-    <div>Activate</div>
+    <div className="container mx-auto h-screen border-black border-2">
+      <span>sjsdj</span>
+    </div>
   )
 }
