@@ -5,7 +5,7 @@ import axios from "axios";
 
 export const Activate = () => {
   const location = useLocation()
-  const { token } = queryString.parse(location.search)
+  const { token }: {token?:string} = queryString.parse(location.search)
 
   const activate = async(token = '') => {
     try {
