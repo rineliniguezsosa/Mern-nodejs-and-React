@@ -33,7 +33,7 @@ export const Activate = () => {
             <Typography className="font-sans font-bold text-[15px] text-center">¡Bienvenido de vuelta rinel! Haz clic para activar tu cuenta ahora mismo.</Typography>
         </Grid>
 
-        <Grid item xs={12} className="border-black border-2 grid justify-items-center items-center">
+        <Grid item xs={12} className="grid justify-items-center items-center">
           <Button variant="outlined">Activa tu cuenta</Button>
         </Grid>
 
