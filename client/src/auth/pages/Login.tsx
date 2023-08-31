@@ -39,7 +39,7 @@ export const Login = () => {
                 {/* errors */}
                 {errors.map((e,index)=>(
                 <Grid key={index} item xs={12} sx={{mt:1}}>
-                  <Typography variant="h5" sx={{fontFamily:'sans-serif',color:'red',fontSize:17}}>{e.msg}</Typography>
+                  <Typography>{e.msg}</Typography>
                 </Grid>
                 ))}
 
