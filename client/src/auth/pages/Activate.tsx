@@ -27,7 +27,9 @@ export const Activate = () => {
   console.log(location)
   return (
     <Grid container className="h-screen border-black border-2 flex flex-col justify-center items-center">
-      <span>sjsdj</span>
+      <Grid item xs={5} className="border-black border-2">
+        sj
+      </Grid>
     </Grid>
   )
 }
