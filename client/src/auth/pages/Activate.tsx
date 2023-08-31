@@ -8,6 +8,12 @@ import axios from "axios";
 export const Activate = () => {
   const location = useLocation()
   const { token }: {token?:string} = queryString.parse(location.search)
+  const [usuario, setUsuario] = useState({
+    nombre:'',
+    token:'',
+    show:true
+  })
+  console.log(usuario);
 
   const activate = async(token = '') => {
     try {
