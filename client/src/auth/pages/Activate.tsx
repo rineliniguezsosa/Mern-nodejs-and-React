@@ -26,7 +26,7 @@ export const Activate = () => {
 
   useEffect(() => {
     if(token){
-      const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
+      //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
      activate(token) 
     } 
   }, [token])
