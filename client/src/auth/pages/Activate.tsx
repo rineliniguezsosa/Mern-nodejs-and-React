@@ -8,7 +8,7 @@ import axios from "axios";
 export const Activate = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams();
-
+  const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
   const token = searchParams.get('token');
  
   const [usuario, setUsuario] = useState({
