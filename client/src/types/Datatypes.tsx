@@ -18,3 +18,10 @@ export type RegisterFormErrors = {
     type:string,
     value:string
 }
+
+export type Usuario = {
+    nombre:string
+    token:string,
+    show:boolean
+};
+   
