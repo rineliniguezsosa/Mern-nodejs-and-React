@@ -6,7 +6,7 @@ export type AuthLayoutprops = {
 }
 
 export type RegisterFormTypes = {
-    nombre?:string,
+    nombre?:string | undefined,
     email:string,
     password:string
 }
@@ -20,7 +20,7 @@ export type RegisterFormErrors = {
 }
 
 export type Usuario = {
-    nombre:string
+    nombre:string | undefined
     token:string,
     show:boolean
 };
