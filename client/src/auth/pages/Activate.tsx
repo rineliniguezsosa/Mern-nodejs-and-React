@@ -9,6 +9,7 @@ export const Activate = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams();
   const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
+  console.log(decodetoken)
   const token = searchParams.get('token');
  
   const [usuario, setUsuario] = useState({
