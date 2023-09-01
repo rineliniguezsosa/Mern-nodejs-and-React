@@ -49,7 +49,7 @@ export const Activate = () => {
       <Grid container sx={{width:{sm:450}}}>
 
         <Grid item xs={12} className="border-black border-2">
-            <Typography className="font-sans font-bold text-[15px] text-center">¡Bienvenido de vuelta rinel! Haz clic para activar tu cuenta ahora mismo.</Typography>
+            <Typography className="font-sans font-bold text-[15px] text-center">¡Bienvenido de vuelta {nombre}! Haz clic para activar tu cuenta ahora mismo.</Typography>
         </Grid>
 
         <Grid item xs={12} className="grid justify-items-center items-center">
