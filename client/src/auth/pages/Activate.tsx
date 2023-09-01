@@ -33,6 +33,8 @@ export const Activate = () => {
       //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
       try{
         const tokendecode: RegisterFormTypes = jwtDecode(token as string); //decode payload
+        console.log(tokendecode)
+        setdecodeToken(tokendecode);
       }catch(error){
         console.log(error)
       }
