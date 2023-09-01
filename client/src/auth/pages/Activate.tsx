@@ -1,6 +1,5 @@
 import { Grid,Typography,Button } from '@mui/material'
 import { useEffect,useState } from "react"
-import jwt,{ JwtPayload } from 'jsonwebtoken'
 import { useLocation,useSearchParams } from "react-router-dom"
 import axios from "axios";
 
