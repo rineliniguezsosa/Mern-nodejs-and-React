@@ -1,6 +1,7 @@
 import { Grid,Typography,Button } from '@mui/material'
 import { useEffect,useState } from "react"
 import { useLocation,useSearchParams } from "react-router-dom"
+import { RegisterFormTypes } from '../../types/Datatypes'
 import jwtDecode from 'jwt-decode';
 import axios from "axios";
 
