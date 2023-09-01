@@ -15,7 +15,7 @@ export const Activate = () => {
   const [usuario, setUsuario] = useState({
     nombre:'',
     token:'',
-    show:true
+    show:false
   })
   console.log(usuario);
 
