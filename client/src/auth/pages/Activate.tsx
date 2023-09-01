@@ -18,8 +18,8 @@ export const Activate = () => {
     show:false
   })
   console.log(usuario);
-  const { token } = usuario;
-  
+  const { token,nombre } = usuario;
+
   const activate = async() => {
     try {
        const req = await axios.post("http://localhost:5000/api/auth/activa-tu-cuenta",{token:token})
