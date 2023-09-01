@@ -31,7 +31,6 @@ export const Activate = () => {
   useEffect(() => {
     const token = searchParams.get('token');
     if(token){
-      //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
       try{
         const tokendecode: RegisterFormTypes = jwtDecode(token as string); //decode payload
         console.log(tokendecode)
