@@ -9,8 +9,8 @@ import axios from "axios";
 export const Activate = () => {
   const location = useLocation()
   const [searchParams] = useSearchParams();
-  const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
-  console.log(decodetoken)
+  //const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
+  //console.log(decodetoken)
   
   const [usuario, setUsuario] = useState({
     nombre:'',
@@ -34,7 +34,7 @@ export const Activate = () => {
       try{
         const tokendecode: RegisterFormTypes = jwtDecode(token as string); //decode payload
         console.log(tokendecode)
-        setdecodeToken(tokendecode);
+        //setdecodeToken(tokendecode);
       }catch(error){
         console.log(error)
       }
