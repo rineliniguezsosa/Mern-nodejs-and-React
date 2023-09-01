@@ -10,8 +10,7 @@ export const Activate = () => {
   const [searchParams] = useSearchParams();
   const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
   console.log(decodetoken)
-  const token = searchParams.get('token');
- 
+  
   const [usuario, setUsuario] = useState({
     nombre:'',
     token:'',
@@ -27,8 +26,9 @@ export const Activate = () => {
       console.log(error)
     }
   }
-
+  
   useEffect(() => {
+    const token = searchParams.get('token');
     if(token){
       //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
     } 
