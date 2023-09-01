@@ -12,7 +12,7 @@ export const Activate = () => {
   //const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
   //console.log(decodetoken)
   
-  const [usuario, setUsuario] = useState({
+  const [usuario, setUsuario] = useState<Usuario>({
     nombre:'',
     token:'',
     show:false
