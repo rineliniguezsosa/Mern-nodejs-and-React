@@ -31,6 +31,11 @@ export const Activate = () => {
     const token = searchParams.get('token');
     if(token){
       //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
+      try{
+
+      }catch(error){
+        console.log(error)
+      }
     } 
   }, [location.search])
   
