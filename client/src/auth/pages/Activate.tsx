@@ -52,7 +52,7 @@ export const Activate = () => {
         </Grid>
 
         <Grid item xs={12} className="grid justify-items-center items-center">
-          <Button variant="outlined">Activa tu cuenta</Button>
+          <Button onClick={activate} variant="outlined">Activa tu cuenta</Button>
         </Grid>
 
       </Grid>
