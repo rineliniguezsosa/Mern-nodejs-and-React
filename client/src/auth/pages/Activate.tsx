@@ -30,7 +30,7 @@ export const Activate = () => {
     if(token){
       //const { nombre } = jwt.decode(token) as JwtPayload; //decode payload 
     } 
-  }, [token])
+  }, [location.search])
   
   console.log(token)
   console.log(location)
