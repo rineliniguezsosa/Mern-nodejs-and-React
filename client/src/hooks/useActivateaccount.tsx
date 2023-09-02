@@ -50,6 +50,7 @@ export const useActivateaccount = () => {
     return {
         nombre,
         activate,
+        open,
         closeSnackbar
     }
 }
