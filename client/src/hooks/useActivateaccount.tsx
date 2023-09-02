@@ -13,6 +13,8 @@ export const useActivateaccount = () => {
         token:'',
         show:false
     })
+
+    const { token,nombre } = usuario;
     return {
 
     }
