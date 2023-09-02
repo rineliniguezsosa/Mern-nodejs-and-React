@@ -39,7 +39,7 @@ export const useActivateaccount = () => {
             console.log(tokendecode)
             setUsuario({...usuario,nombre:nombre,token:token,show:true})
           }catch(error){
-            console.log(error)
+            console.log("error en la decodeficación",error)
           }
         } 
       }, [location.search])
