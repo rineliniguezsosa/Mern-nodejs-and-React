@@ -4,7 +4,7 @@ import MuiAlert from '@mui/material/Alert';
 
 export const Activate = () => {
   
-  const { nombre,activate,closeSnackbar } = useActivateaccount()
+  const { nombre,activate,closeSnackbar,open } = useActivateaccount()
 
   return (
     <Grid container className="h-screen flex flex-col justify-center items-center">
