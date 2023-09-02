@@ -1,4 +1,3 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 import { Grid,Button,Snackbar } from '@mui/material'
 import { useActivateaccount } from '../../hooks'
 import MuiAlert from '@mui/material/Alert';
