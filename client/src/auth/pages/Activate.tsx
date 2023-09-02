@@ -1,12 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Grid,Button,Snackbar } from '@mui/material'
 import { useActivateaccount } from '../../hooks'
-import { useEffect,useState } from "react"
-import { useLocation,useSearchParams } from "react-router-dom"
-import { RegisterFormTypes,Usuario } from '../../types/Datatypes'
 import MuiAlert from '@mui/material/Alert';
-import jwtDecode from 'jwt-decode';
-import axios from "axios";
 
 export const Activate = () => {
   const location = useLocation()
@@ -45,7 +40,7 @@ export const Activate = () => {
       }
     } 
   }, [location.search])
-  
+  const { nombre,activate } = useActivateaccount()
   return (
     <Grid container className="h-screen flex flex-col justify-center items-center">
 
