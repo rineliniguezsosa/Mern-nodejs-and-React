@@ -24,8 +24,9 @@ export const useActivateaccount = () => {
            const req = await axios.post("http://localhost:5000/api/auth/activa-tu-cuenta",{token:token})
            setMensaje(req.data.mensaje)
            setOpen(true)
-        } catch (error) {
-          console.log(error)
+        } catch (error:any) {
+           setMensaje(error.response.data.mensaje)
+           setOpen(true)
         }
     }
     
