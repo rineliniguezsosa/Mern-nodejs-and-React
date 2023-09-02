@@ -45,7 +45,7 @@ export const Activate = () => {
   }, [location.search])
   
   return (
-    <Grid container className="h-screen border-black border-2 flex flex-col justify-center items-center">
+    <Grid container className="h-screen flex flex-col justify-center items-center">
       <Grid container sx={{width:{sm:450}}}>
 
         <Grid item xs={12}>
