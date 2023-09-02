@@ -9,6 +9,7 @@ export const useActivateaccount = () => {
     const location = useLocation()
     const [searchParams] = useSearchParams();
     const [open, setOpen] = useState(false) //gestiona el Snackbar
+
     const [usuario, setUsuario] = useState<Usuario>({
         nombre:'',
         token:'',
@@ -25,7 +26,7 @@ export const useActivateaccount = () => {
           console.log(error)
         }
     }
-
+    
     useEffect(() => {
         const token = searchParams.get('token');
         if(token){
@@ -41,6 +42,11 @@ export const useActivateaccount = () => {
         } 
       }, [location.search])
 
+    //oculta el componente Snackbar
+    const closeSnackbar = () =>{
+        setOpen(false)
+    }
+    
     return {
         nombre,
         activate
