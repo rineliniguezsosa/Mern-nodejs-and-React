@@ -16,6 +16,13 @@ export const Activate = () => {
             </MuiAlert>
       </Snackbar>
 
+      {/* snackbar errors */}
+      <Snackbar open={open} autoHideDuration={5000} onClose={closeSnackbar}>
+            <MuiAlert onClose={closeSnackbar} variant='filled' severity="error">
+                <span>{mensaje}</span>
+            </MuiAlert>
+      </Snackbar>
+
       <Grid container sx={{width:{sm:450}}}>
 
         <Grid item xs={12}>
