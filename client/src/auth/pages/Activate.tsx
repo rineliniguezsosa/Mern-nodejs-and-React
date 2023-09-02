@@ -3,6 +3,7 @@ import { Grid,Button,Snackbar } from '@mui/material'
 import { useEffect,useState } from "react"
 import { useLocation,useSearchParams } from "react-router-dom"
 import { RegisterFormTypes,Usuario } from '../../types/Datatypes'
+import MuiAlert from '@mui/material/Alert';
 import jwtDecode from 'jwt-decode';
 import axios from "axios";
 
