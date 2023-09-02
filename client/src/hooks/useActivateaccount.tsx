@@ -7,7 +7,12 @@ import axios from "axios";
 export const useActivateaccount = () => {
     const location = useLocation()
     const [searchParams] = useSearchParams();
-    
+
+    const [usuario, setUsuario] = useState<Usuario>({
+        nombre:'',
+        token:'',
+        show:false
+    })
     return {
 
     }
