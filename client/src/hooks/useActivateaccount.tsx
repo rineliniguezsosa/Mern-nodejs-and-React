@@ -9,6 +9,7 @@ export const useActivateaccount = () => {
     const location = useLocation()
     const [searchParams] = useSearchParams();
     const [open, setOpen] = useState(false) //gestiona el Snackbar
+    const [mensaje,setMensaje] = useState<string>('')
 
     const [usuario, setUsuario] = useState<Usuario>({
         nombre:'',
