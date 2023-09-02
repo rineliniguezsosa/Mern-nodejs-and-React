@@ -4,8 +4,7 @@ import { useActivateaccount } from '../../hooks'
 import MuiAlert from '@mui/material/Alert';
 
 export const Activate = () => {
-  //const [decodetoken, setdecodeToken] = useState<RegisterFormTypes | null>(null)
-  //console.log(decodetoken)
+  
   const { nombre,activate } = useActivateaccount()
 
   return (
