@@ -1,5 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { Grid,Button,Snackbar } from '@mui/material'
+import { useActivateaccount } from '../../hooks'
 import { useEffect,useState } from "react"
 import { useLocation,useSearchParams } from "react-router-dom"
 import { RegisterFormTypes,Usuario } from '../../types/Datatypes'
