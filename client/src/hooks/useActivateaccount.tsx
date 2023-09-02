@@ -5,7 +5,9 @@ import jwtDecode from 'jwt-decode';
 import axios from "axios";
 
 export const useActivateaccount = () => {
-
+    const location = useLocation()
+    const [searchParams] = useSearchParams();
+    
     return {
 
     }
