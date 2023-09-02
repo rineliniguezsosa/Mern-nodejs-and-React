@@ -22,6 +22,8 @@ export const Activate = () => {
                 <span>{mensaje}</span>
             </MuiAlert>
       </Snackbar>
+
+       {/* Activa tu cuenta */}
       {nombre ? 
       <Grid container sx={{width:{sm:450}}}>
 
