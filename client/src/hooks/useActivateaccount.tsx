@@ -42,6 +42,7 @@ export const useActivateaccount = () => {
       }, [location.search])
 
     return {
-
+        nombre,
+        activate
     }
 }
