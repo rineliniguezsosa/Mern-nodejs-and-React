@@ -53,7 +53,7 @@ export const Activate = () => {
             </span>
         </Grid>
 
-        <Grid item xs={12} className="grid justify-items-center items-center">
+        <Grid item xs={12} className="grid justify-items-center items-center p-2">
           <Button onClick={activate} variant="outlined">Activa tu cuenta</Button>
         </Grid>
 
