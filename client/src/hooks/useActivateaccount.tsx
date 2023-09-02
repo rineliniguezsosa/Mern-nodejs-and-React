@@ -8,7 +8,7 @@ import axios from "axios";
 export const useActivateaccount = () => {
     const location = useLocation()
     const [searchParams] = useSearchParams();
-
+    const [open, setOpen] = useState(false) //gestiona el Snackbar
     const [usuario, setUsuario] = useState<Usuario>({
         nombre:'',
         token:'',
