@@ -46,9 +46,10 @@ export const useActivateaccount = () => {
     const closeSnackbar = () =>{
         setOpen(false)
     }
-    
+
     return {
         nombre,
-        activate
+        activate,
+        closeSnackbar
     }
 }
