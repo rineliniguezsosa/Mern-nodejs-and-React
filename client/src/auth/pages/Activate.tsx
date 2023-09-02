@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import { Grid,Typography,Button } from '@mui/material'
+import { Grid,Button } from '@mui/material'
 import { useEffect,useState } from "react"
 import { useLocation,useSearchParams } from "react-router-dom"
 import { RegisterFormTypes,Usuario } from '../../types/Datatypes'
