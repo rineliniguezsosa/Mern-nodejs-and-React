@@ -47,6 +47,14 @@ export const Activate = () => {
   
   return (
     <Grid container className="h-screen flex flex-col justify-center items-center">
+
+      {/* snackbar */}
+      <Snackbar open={open} autoHideDuration={5000} onClose={closeSnackbar}>
+            <MuiAlert onClose={closeSnackbar} variant='filled' severity="success">
+                <span>{mensaje}</span>
+            </MuiAlert>
+      </Snackbar>
+
       <Grid container sx={{width:{sm:450}}}>
 
         <Grid item xs={12}>
