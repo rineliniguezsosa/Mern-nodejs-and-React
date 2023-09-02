@@ -1,4 +1,4 @@
-import { Grid,Button,Snackbar } from '@mui/material'
+import { Grid,Button,Snackbar,CircularProgress } from '@mui/material'
 import { useActivateaccount } from '../../hooks'
 import MuiAlert from '@mui/material/Alert';
 
@@ -22,7 +22,7 @@ export const Activate = () => {
                 <span>{mensaje}</span>
             </MuiAlert>
       </Snackbar>
-
+      {nombre ? 
       <Grid container sx={{width:{sm:450}}}>
 
         <Grid item xs={12}>
@@ -35,6 +35,8 @@ export const Activate = () => {
         </Grid>
 
       </Grid>
+      : <CircularProgress />
+      }
 
     </Grid>
   )
