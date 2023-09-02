@@ -38,7 +38,6 @@ export const useActivateaccount = () => {
             const { nombre } = tokendecode;
             console.log(tokendecode)
             setUsuario({...usuario,nombre:nombre,token:token,show:true})
-            //setdecodeToken(tokendecode);
           }catch(error){
             console.log(error)
           }
