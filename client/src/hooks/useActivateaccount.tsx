@@ -53,6 +53,7 @@ export const useActivateaccount = () => {
         nombre,
         activate,
         open,
-        closeSnackbar
+        closeSnackbar,
+        mensaje
     }
 }
